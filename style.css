@@ -118,7 +118,7 @@ option {
     content: "\25bc";
     position: absolute;
     background-color: #8d000c;
-    top: 0px;
+    top: -3px;
     right: 0;
     padding: .9rem;
     pointer-events: none;
