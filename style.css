@@ -11,6 +11,11 @@ body {
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
+    height: 100vh;
+}
+.container {
+    width: 90%;
+    margin: auto;
 }
 header{
     font-size: 1.5rem;
@@ -20,7 +25,7 @@ header, form {
     min-height: 20vh;
     display: flex;
     align-items: center;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
 }
 form input , form button {
     padding: 0.7rem;
@@ -46,7 +51,7 @@ form button:focus {
 }
 .todo-container {
     display: flex;
-    margin-left: 6.4rem;
+    /* margin-left: 6.4rem; */
     align-items: center;
 }
 .todo-list {
@@ -58,7 +63,7 @@ form button:focus {
     margin: 0.5rem;
     background: #fff;
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,6 +84,9 @@ form button:focus {
 }
 .check-btn {
   background-color: rgb(46 46 46);;
+}
+button:focus {
+    outline: none;
 }
 .fa-trash , .fa-check {
     pointer-events: none;
