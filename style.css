@@ -3,23 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-image: linear-gradient(120deg,#e6c35d,#d88771);
+    background-image: url(./imgs/top-view-red-cup-coffee-with-copy-space.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
 }
 header{
     font-size: 1.5rem;
+    color: #dcdbd3;
 }
 header, form {
     min-height: 20vh;
-    display:flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    margin-left: 5rem;
 }
 form input , form button {
-    padding: 0.5rem;
-    font-size: 2rem;
+    padding: 0.7rem;
+    font-size: 1.2rem;
     border: none;
     background: white;
 }
@@ -27,13 +32,13 @@ form input:focus{
     outline: none;
 }
 form button{
-    color: #d88771;
+    color: #8d000c;
     background: #fff;
     cursor: pointer;
     transition: all .3s ease;
 }
 form button:hover {
-    background-color: #d88771;
+    background-color: #8d000c;
     color: #fff;
 }
 form button:focus {
@@ -41,11 +46,11 @@ form button:focus {
 }
 .todo-container {
     display: flex;
-    justify-content: center;
+    margin-left: 6.4rem;
     align-items: center;
 }
 .todo-list {
-    min-width:50%;
+    min-width:40%;
     list-style: none;
 }
 
@@ -57,6 +62,7 @@ form button:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.5s ease;
 
 }
 .todo-item {
@@ -64,7 +70,7 @@ form button:focus {
     padding: 0rem 0.5rem;
 }
 .trash-btn , .check-btn{
-    background: #ff6f47;
+    background: #8d000c;
     color: #fff;
     border: none;
     padding: 1rem;
@@ -72,5 +78,54 @@ form button:focus {
     font-size: 1rem;
 }
 .check-btn {
-    background-color: rgb(73, 204,73);
+  background-color: rgb(46 46 46);;
+}
+.fa-trash , .fa-check {
+    pointer-events: none;
+}
+.checked {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: #a50912;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.9rem;
+  
+    
+}
+option {
+    padding: 1rem;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+.select:after {
+    content: "\25bc";
+    position: absolute;
+    background-color: #8d000c;
+    top: 0px;
+    right: 0;
+    padding: .9rem;
+    pointer-events: none;
+    color: #fff;
+    transition: all .3 ease;
+}
+.select:hover::after {
+    background: #fff;
+    color: #8d000c;
 }
