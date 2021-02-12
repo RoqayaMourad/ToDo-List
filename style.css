@@ -86,7 +86,7 @@ form button:focus {
     font-size: 1rem;
 }
 .check-btn {
-  background-color: rgb(46 46 46);;
+  background-color:rgb(63 205 70);
 }
 button:focus {
     outline: none;
